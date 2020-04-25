@@ -1,7 +1,7 @@
 echo -e "\e[34m[*]\t\e[32mupdating packages..\e[0m";
-(apk update;apk upgrade -y) > /dev/null
+(apk update;apk upgrade) > /dev/null
 echo -e "\e[34m[*]\t\e[32minstalling packages..\e[0m";
-(apk add git nodejs clang -y) > /dev/null
+(apk add git nodejs clang) > /dev/null
 heroku4=`which heroku`
 if test -e "$heroku4"
 then
